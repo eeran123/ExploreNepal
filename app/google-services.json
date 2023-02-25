@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "959084606842",
+    "project_id": "explorenepal-3050e",
+    "storage_bucket": "explorenepal-3050e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959084606842:android:b0ad11cfaa058d639812c3",
+        "android_client_info": {
+          "package_name": "com.example.app.explorenepal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959084606842-b29dv7gv70ooth72bfr8pdj06qondi37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.app.explorenepal",
+            "certificate_hash": "da1b80a13cc7ca99234bc2b032c7859d88b18162"
+          }
+        },
+        {
+          "client_id": "959084606842-9e25clt6vl9fa4sekro6k17lc0b9t319.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw2aZnZ15c_2PGCYaOIFN3HsIXACeOdXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959084606842-9e25clt6vl9fa4sekro6k17lc0b9t319.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

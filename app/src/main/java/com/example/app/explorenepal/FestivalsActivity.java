@@ -13,7 +13,7 @@ import android.widget.ListView;
 public class FestivalsActivity extends AppCompatActivity {
 
     ListView List;
-    String festivalsList[] = {"Summer festivals", "Winter and Fall festivals", "Spring festivals"};
+    String[] festivalsList = {"Summer festivals", "Winter and Fall festivals", "Spring festivals"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class FestivalsActivity extends AppCompatActivity {
         ImageView img = (ImageView) findViewById(R.id.imageView);
 
         List = (ListView)findViewById(R.id.ListView);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.festivals_list_item ,R.id.textView, festivalsList);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, R.layout.festivals_list_item, R.id.textView, festivalsList);
         List.setAdapter(arrayAdapter);
 
         List.setOnItemClickListener(new AdapterView.OnItemClickListener() {

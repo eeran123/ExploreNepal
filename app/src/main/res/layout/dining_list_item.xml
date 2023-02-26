@@ -42,7 +42,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="20dp"
             android:padding="5dp"
-            android:text="blabla bla"
+            android:text="lakeside view restaurants"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold|italic" />
@@ -55,7 +55,7 @@
             android:layout_alignStart="@+id/tvPlaceName"
             android:layout_marginStart="6dp"
             android:layout_marginTop="-24dp"
-            android:text="blablablablablablablabla" />
+            android:text="Cafe and bakery restaurants specialize in coffee, tea, pastries, and baked goods. They often have a cozy atmosphere and are popular places to hang out and socialize." />
 
         <Button
             android:id="@+id/favBtn"

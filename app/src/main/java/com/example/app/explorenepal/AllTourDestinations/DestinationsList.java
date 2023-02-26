@@ -1,12 +1,11 @@
 package com.example.app.explorenepal.AllTourDestinations;
 
+import android.os.Bundle;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
 
 import com.example.app.explorenepal.R;
 
@@ -25,7 +24,7 @@ public class DestinationsList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tour_attractions_list);
-        img = (ImageView) findViewById(R.id.imageView);
+        img = findViewById(R.id.imageView);
 
 
 

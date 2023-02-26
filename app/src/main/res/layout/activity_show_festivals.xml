@@ -31,7 +31,11 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="24dp"
             android:fontFamily="@font/nunito_sans_bold"
-            android:text="Description here"
+            android:text="Festivals in Nepal play a significant role in the cultural and social life of the people. They are celebrated with great enthusiasm and bring people together, regardless of their religion or ethnicity.
+
+There are various festivals celebrated throughout the year in Nepal, such as Dashain, Tihar, Holi, and Buddha Jayanti, among others. Many of these festivals have religious and cultural significance and involve traditional practices, such as puja (worship), feasting, and merrymaking.
+
+The festivals in Nepal also offer a great opportunity for tourism, as they attract visitors from around the world who are interested in experiencing the unique cultural heritage of Nepal."
             android:textColor="#CC000000"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"

@@ -21,6 +21,7 @@ import com.example.app.explorenepal.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Objects;
 
 
 public class DiningList extends AppCompatActivity implements Dining_ADAPTER.onBtnFavListener {
@@ -82,7 +83,7 @@ public  void addToFavorite(int pos){
     hashMap.put("time",""+timestamp);
 
     DatabaseReference ref= FirebaseDatabase.getInstance().getReference("Users");
-    ref.child(firebaseAuth.getUid()).child("Favorites").child(String.valueOf(pos)).setValue(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
+    ref.child(Objects.requireNonNull(firebaseAuth.getUid())).child("Favorites").child(String.valueOf(pos)).setValue(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
         @Override
         public void onSuccess(Void unused) {
             Toast.makeText(DiningList.this,"Added to your favorites list...",Toast.LENGTH_LONG).show();
@@ -101,7 +102,7 @@ public  void removeFromFavorite(int pos){
     FirebaseAuth firebaseAuth=FirebaseAuth.getInstance();
     DatabaseReference ref= FirebaseDatabase.getInstance().getReference("Users");
 
-    ref.child(firebaseAuth.getUid()).child("Favorites").child(String.valueOf(pos)).removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
+    ref.child(Objects.requireNonNull(firebaseAuth.getUid())).child("Favorites").child(String.valueOf(pos)).removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
         @Override
         public void onSuccess(Void unused) {
             Toast.makeText(DiningList.this,"Removed from your favorites list...",Toast.LENGTH_LONG).show();

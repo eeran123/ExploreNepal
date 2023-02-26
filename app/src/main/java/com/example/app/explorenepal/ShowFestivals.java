@@ -2,12 +2,14 @@ package com.example.app.explorenepal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.TextView;
 
 public class ShowFestivals extends AppCompatActivity {
 
     TextView tv;
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,33 +20,105 @@ public class ShowFestivals extends AppCompatActivity {
         String key= getIntent().getStringExtra("key");
 
         if (Integer.parseInt(key)==0){
-            tv.setText("Dance:\n" +
+            tv.setText("Rato Machhindranath Jatra:\n" +
                     "\n" +
-                    "Nepali dance is a vibrant and colorful art form that is deeply rooted in the country's rich cultural heritage. It is a form of expression that combines music, rhythm, and movement to convey a story or message.\n" +
+                    "This is a month-long festival celebrated in Patan, Kathmandu valley during the months of May and June. The festival is dedicated to the god of rain and good harvest, Rato Machhindranath.\n" +
                     "\n" +
-                    "Music:\n" +
+                    "Janai Purnima:\n" +
                     "\n" +
-                    "Nepali music is a diverse and vibrant art form that is deeply rooted in the country's cultural heritage. It encompasses a wide range of musical genres, including traditional folk music, classical music, pop music, and fusion music.\n" +
+                    "This festival is celebrated in August, marking the full moon day of the Hindu month of Shrawan. It is a religious festival that involves the changing of the sacred thread by the Brahmin community.\n" +
                     "\n" +
-                    "Traditional Nepali music is often associated with folk songs and dances that are performed during festivals and special occasions. These songs and dances are characterized by their simplicity and use of traditional instruments, such as the madal, sarangi, and bansuri.\n" +
+                    "Nag Panchami:\n" +
                     "\n" +
-                    "Classical Nepali music, on the other hand, is influenced by Indian classical music and is often performed by trained musicians. It is known for its intricate melodies and rhythms and is typically performed in a formal setting, such as a concert hall.\n" +
+                    "This festival is celebrated in July or August, marking the worship of the serpent god. It is believed that the worship of the serpent god protects against snake bites.\n" +
                     "\n" +
-                    "arts and history:\n" +
+                    "Krishna Janmashtami:\n" +
                     "\n" +
-                    "Nepal has a rich artistic and cultural heritage that is deeply intertwined with its history. The country's art and architecture have been influenced by a range of different cultural, religious, and historical factors, including Buddhism, Hinduism, and various royal dynasties.");
+                    "This festival is celebrated in August or September to mark the birth of Lord Krishna. It is celebrated with great enthusiasm in the Kathmandu valley." +
+                    "\n" +
+                    "Ropai Jatra: \n" +
+                    "\n" +
+                    "This festival is celebrated in June, marking the beginning of the rice-planting season. It is celebrated with great joy in the rural areas of Nepal." +
+                    "\n" +
+                    "Ghanta Karna Chaturdashi: \n" +
+                    "\n" +
+                    "This festival is celebrated in August or September. It involves the burning of an effigy of the demon Ghanta Karna, which is believed to ward off evil spirits." +
+
+                    "Gai Jatra: \n" +
+                    "\n" +
+                    "A festival celebrated to honor the dead, celebrated in August or September.Although Gai Jatra is celebrated in August or September, it falls during the summer season. It is a colorful festival celebrated in the Kathmandu valley to honor the dead."
+
+            );
         }
         else if(Integer.parseInt(key)==1){
-            tv.setText("Theater:\n" +
-                    "\n" +
-                    "Nepali theater is a vibrant and growing art form that has a rich cultural history. It is a form of expression that combines acting, music, and dance to tell stories and convey messages to the audience.\n" +
-                    "\n"
+            tv.setText(     "Dashain:\n" +
+                            "\n" +
+                            "Dashain is the biggest and most important festival in Nepal, celebrated in September or October. It is a 15-day festival that marks the victory of good over evil.The biggest and most important festival in Nepal, celebrated in September or October for 15 days.\n" +
+                             "\n"+
+                            "Tihar:\n" +
+                            "\n" +
+                            "Tihar, also known as the festival of lights, is celebrated in October or November for five days. It is a festival that honors the goddess of wealth and prosperity.\n" +
+                            "\n" +
+                            "Chhat:\n" +
+                            "\n" +
+                            "Chhath is a festival celebrated in November, mainly in the Terai region of Nepal. It is a festival dedicated to the worship of the sun god.\n" +
+                            "\n" +
+                            "Maghe Sankranti:\n" +
+                            "\n" +
+                            "Maghe Sankranti is celebrated in January, marking the end of the winter solstice. It is a festival that marks the beginning of longer and warmer days.\n" +
+                            "\n" +
+                            "Loshar:\n" +
+                            "\n" +
+                            "Lhosar is a festival celebrated by the Tibetan community in Nepal. It is celebrated in February or March and marks the beginning of the Tibetan New Year.\n" +
+                            "\n" +
+                            "Shree Swasthani Brata Katha: \n" +
+                            "\n" +
+                            "This festival is celebrated in January or February and involves the reading of the Swasthani Brata Katha, a Hindu religious text that tells the story of Lord Shiva and Parvati." +
+                            "\n" +
+                            "Ghanta Karna Chaturdashi: \n" +
+                            "\n" +
+                            "This festival is celebrated in August or September. It involves the burning of an effigy of the demon Ghanta Karna, which is believed to ward off evil spirits." +
+
+                            "Sonam Lhosar \n" +
+                            "\n" +
+                            "Sonam Lhosar is another Tibetan New Year festival celebrated by the Tamang community in Nepal. It is celebrated in February and involves singing, dancing, and feasting.\n" +
+                            "\n"
+
                     );
         }else{
-            tv.setText("Music:\n" +
+            tv.setText("Holi:\n" +
                     "\n" +
-                    "Nepali music is a vibrant and diverse art form that reflects the country's rich cultural heritage and its connection to both India and the wider world. It continues to evolve and adapt to changing times, while remaining an important part of the country's cultural identity.\n" +
-                    "\n" );
+                    "Holi, also known as the festival of colors, is celebrated in March to mark the beginning of spring. It is a festival of joy, fun, and frolic, and involves the throwing of colored powder and water.\n" +
+                    "\n" +
+                    "Bisket Jatra:\n" +
+                    "\n" +
+                    "Bisket Jatra is a festival celebrated in the town of Bhaktapur in April. It is a festival that marks the Nepali New Year and involves the pulling of chariots and the display of colorful masks\n" +
+                    "\n"+
+                    "Buddha Jayanti:\n" +
+                    "\n" +
+                    " Buddha Jayanti is a festival celebrated in April or May to commemorate the birth, enlightenment, and death of Lord Buddha. It is a festival that involves prayer, meditation, and offerings.\n" +
+                    "\n" +
+                    "Nepali New Year:\n" +
+                    "\n" +
+                    "Nepali New Year, also known as Baisakh, is celebrated in April. It is a festival that marks the beginning of a new year and involves prayer, feasting, and dancing.\n" +
+                    "\n" +
+                    "Rato Machhindranath Jatra:\n" +
+                    "\n" +
+                    "Rato Machhindranath Jatra is a month-long festival celebrated in May and June in Patan, Kathmandu valley. It is a festival that honors the god of rain and good harvest, Rato Machhindranath.\n" +
+                    "\n" +
+                    "Loshar:\n" +
+                    "\n" +
+                    "Lhosar is a festival celebrated by the Tibetan community in Nepal. It is celebrated in February or March and marks the beginning of the Tibetan New Year.\n" +
+                    "\n" +
+                    "Seto Machhindranath Jatra: \n" +
+                    "\n" +
+                    "Seto Machhindranath Jatra is a festival celebrated in April or May in Kathmandu valley. It is a festival that involves the pulling of a chariot carrying the statue of the god Seto Machhindranath." +
+                    "\n" +
+                    "Ghode Jatra: \n" +
+                    "\n" +
+                    "Ghode Jatra is a festival celebrated in April in Kathmandu valley. It is a festival that involves the display of horses and is believed to protect against evil spirits."
+
+            );
         }
 
     }
